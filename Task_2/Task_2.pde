@@ -10,7 +10,7 @@ String navn = "Copenhagen";
 
 int indexOfCharH = navn.indexOf("h");
 int charCount = navn.length();
-String printpart = navn.substring(5);
+String printpart = navn.substring(5,9);
 
 
 void setup () {
@@ -20,7 +20,13 @@ void setup () {
   // index tallet for den karakter udsnittet skal starte fra
   println("indexOFCharH: " + indexOfCharH);
   // længden på udsnittet
-  println(charCount);
-  //sidste del af Copenhagen = hagen
   println(printpart);
+  printPartOfWord("københavn", 5,9);
+}
+
+void printPartOfWord(String name, int index, int lang) {
+ String str = name.substring(index,lang);
+ println(str);
+  
+ 
 }
